@@ -9,6 +9,31 @@
     <title>CodeBoost</title>
 </head>
 <body>
+    <style type="text/css">
+        blockquote {
+            background: #f9f9f9;
+            border-left: 10px solid #ccc;
+            margin: 1.5em 10px;
+            padding: 0.5em 10px;
+            quotes: '\201C' '\201D' '\2018' '\2019';
+        }
+        blockquote::before {
+            color: #ccc;
+            content: open-quote;
+            font-size: 3em;
+            line-height: 0.1em;
+            margin-left: 0.25em;
+            vertical-align: -0.4em;
+        }
+        blockquote::after {
+            color: #ccc;
+            content: close-quote;
+            font-size: 3em;
+            line-height: 0.1em;
+            margin-left: 0.25em;
+            vertical-align: -0.4em;
+        }
+    </style>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -58,6 +83,66 @@
             </div>
         </div>
     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-tags"></span>
+                            &nbsp;&nbsp; 김원호 교수
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="img/Developer1.png" alt="개발자 이미지">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">김원호</h4><br>
+                                    Representative Lecturer of CodeBooster.
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Professor Name</th>
+                                <th>Lecture Number</th>
+                                <th>Lecture Title</th>
+                                <th>Lecture Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>오지완</td>
+                                <td>1</td>
+                                <td><a href="lecture.html?lectureName=Python">Python Programming Lecture</th>
+                                <td>2019-11-25</td>
+                            </tr>
+                            <tr>
+                                <td>나동빈</td>
+                                <td>2</td>
+                                <td><a href="lecture.html?lectureName=Java">Java Programming Lecture</th>
+                                <td>2020-5-16</td>
+                            </tr>
+                            <tr>
+                                <td>김원호</td>
+                                <td>3</td>
+                                <td><a href="lecture.html?lectureName=C/C++">C++ Programming Lecture</th>
+                                <td>2021-10-4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="panel-footer">
+                        <blockquote>&nbsp;&nbsp; You will know the Truth, and the Truth will set you free.</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer style="background-color: #000; color: #bbb;">
         <div class="container">
             <br>
